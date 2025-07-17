@@ -3,7 +3,7 @@ let coordinates = [48.8575, 2.3514];
 
 let map = L.map("map",{
   center: coordinates,
-  zoom: 18 
+  zoom: 10
 });
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -15,10 +15,9 @@ let circleMarker01 = L.circle(coordinates,{
   color: "black",
   fillColor: "yellow",
   fillOpacity: 0.5,
-  radius: 500
-}).bindPopup("
-             <center
+  radius: 100
+}).bindPopup('<center>
             <h3>Hello from Paris!</h3>
-             <iframe width="560" height="315" src="https://www.youtube.com/embed/RmnRF_lNDbA?si=2Xz0tpgmtffGEMI0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+             <iframe width="200" height="100" src="https://www.youtube.com/embed/RmnRF_lNDbA?si=2Xz0tpgmtffGEMI0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
              </center>").addTo(map);
              
