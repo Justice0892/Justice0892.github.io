@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <title>Music Chart</title>
+    <style>
+      body{
+        background-color: #daffa6;
+      }
+      #plot{
+        padding: 0;
+        margin: 0;
+        padding-bottom: 0;
+      }
+    </style>
+    <script src="https://cdn.plot.ly/plotly-3.0.1.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <center>
+      <h1>A Chart of Anderson .Paak's songs</h1>
+      <div id="plot"></div>
+      <h2>View the Videos for the Songs Below</h2>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/vvPeJLcK2Lk?si=wKhNe7YcVVhUBUPD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <br>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/7PmUtmfTmbg?si=D2dmyjTOdggyv_Xd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <br>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/7Jj83FOlBF8?si=by1rMAHGos3j1Wca" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <br>
+      <script>
+        let songs = ["Am I Wrong", "Bubblin", "Make it Better"];
+        let views = [16891914, 30020712, 14453322];
+        let trace = {
+          x: songs,
+          y: views,
+          type: "bar"
+        };
+        let data = [trace];
+        Plotly.newPlot("plot", data);
+      </script>
+      <p>
+        <a href="index.html">Click here to go Back to the Home Page</a>
+      </p>
+    </center>
+    <footer>
+      <center>
+        <hr>
+        <p>
+          <i>Dr. A's Website &copy; 2025</i>
+        </p>
+      </center>
+    </footer>
+  </body>
+</html>
