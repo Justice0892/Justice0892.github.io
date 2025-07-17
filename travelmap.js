@@ -15,7 +15,7 @@ let circleMarker01 = L.circle(coordinates,{
   color: "black",
   fillColor: "yellow",
   fillOpacity: 0.5,
-  radius: 100
+  radius: 300
 }).bindPopup(`<center>
             <h3>Hello from Paris!</h3>
              <iframe width="200" height="100" src="https://www.youtube.com/embed/RmnRF_lNDbA?si=2Xz0tpgmtffGEMI0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
